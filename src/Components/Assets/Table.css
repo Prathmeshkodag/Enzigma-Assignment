@@ -1,0 +1,134 @@
+/* Container styling */
+.task-table-container {
+    width: 90%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    text-align: left;
+  }
+  
+  /* Table Actions: Search, New Task, and Refresh */
+  .table-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  
+  .table-actions input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .new-task, .refresh {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffc107;
+    border-radius: 4px;
+    width: 15%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .new-task:hover, .refresh:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Table styling */
+  .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .task-table th, .task-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .task-table th {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .task-table td {
+    background-color: #fff;
+  }
+  
+  /* Button Styling */
+  .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .pagination button:disabled {
+    background-color: #d6d6d6;
+  }
+  
+  .pagination span {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .task-table-container {
+      width: 100%;
+    }
+  
+    .table-actions {
+      flex-direction: column;
+    }
+  
+    .table-actions input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .task-table th, .task-table td {
+      font-size: 14px;
+    }
+
+    
+  }
+  
